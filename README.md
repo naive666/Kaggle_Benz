@@ -7,7 +7,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 
 ## Table of Content
 
-- [Background](Background)
+- [Background](#background)
 - [ML_Model 1]()
 - [ML_Model 2]()
 - [DP_Model]()
