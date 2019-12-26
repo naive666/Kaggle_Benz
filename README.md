@@ -36,7 +36,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   - Use GridSearch to train Random Forest Regressor and XGBoost models
 - [Result](/ML_Model_1/model_result)
   - Score 0.52 in private leaderboard.
-- Submission(/ML_Model_1/my_submission1.csv)
+- [Submission](/ML_Model_1/my_submission1.csv)
 
 - Summary
   -  This model could be improved by the following aspects:
