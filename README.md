@@ -21,8 +21,8 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 
 
 ## ML Model 1
-[This]() model use Random Forest Regressor to reduce the feature dimensions. The followings are brief summary of this method.
-- Feature Selection
+[This](/ML_Model_1) model use Random Forest Regressor to reduce the feature dimensions. The followings are brief summary of this method.
+- [Feature Selection]()
   - Set total epoch number to 3000
   - Use KFold to do cross validation in each epoch
   - Randomly pick up 10 features from the entire feature sets with bootstrap for each epoch
@@ -31,6 +31,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   - Select the top 5 features for each epoch and store the feature importance in an array of shape (epoch, 5) 
   - After finishing first 30 epochs, judge if the r2_score is higher than the average of previous 30 epoch, if true, record this epoch, otherwise omit it
   
- - Model 
+- [Model]() 
   - Use pd.factorize() to encoder the categorical features. One can also use labelencoder to get the same result
   - Use GridSearch to train Random Forest Regressor and XGBoost models
+- [Result]()
