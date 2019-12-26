@@ -22,7 +22,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 
 ## ML Model 1
 [This](/ML_Model_1) model use Random Forest Regressor to reduce the feature dimensions. The followings are brief summary of this method.
-- [Feature Selection]()
+- [Feature Selection](/ML_Model_1/data_review.ipynb)
   - Set total epoch number to 3000
   - Use KFold to do cross validation in each epoch
   - Randomly pick up 10 features from the entire feature sets with bootstrap for each epoch
@@ -31,7 +31,19 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   - Select the top 5 features for each epoch and store the feature importance in an array of shape (epoch, 5) 
   - After finishing first 30 epochs, judge if the r2_score is higher than the average of previous 30 epoch, if true, record this epoch, otherwise omit it
   
-- [Model]() 
+- [Model](/ML_Model_1/model.ipynb) 
   - Use pd.factorize() to encoder the categorical features. One can also use labelencoder to get the same result
   - Use GridSearch to train Random Forest Regressor and XGBoost models
-- [Result]()
+- [Result](/ML_Model_1/model_result)
+  - Score 0.52 in private leaderboard.
+- Submission(/ML_Model_1/my_submission1.csv)
+
+- Summary
+  -  This model could be improved by the following aspects:
+    - The Random Forest Regressor parameters could be tune
+    - We should factorize the categorical features first, then use model to selecting features
+    - In each epoch, select over 10 features
+    - We could try more than 7 features in the predict models
+
+- Warning
+  - After finishing this model, I found I made several mistakes. Since most features are encoded by 0 and 1, it is reasonable to guess some columns together represents one feature(This is like our factorize process). In order to correct the mistake, the second method comes up
