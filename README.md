@@ -63,12 +63,12 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   - Unfortunately, XGBoost model get 0.39 while the stacked model scores 0.45, neither is a good score. It seems I should not reduce the features so much. 
 
 - [Revised Model](/ML_Model_2/feature_selection4.ipynb)
-Since most of our features are sparse, I should try not to reduce the feature, just use the original entire features. Let's look at what happen.
-- Model
-  - Concat train data and test data
-  - Use LabelEncoder to transfer categorical features to numerical
-  - Create the same stacked model, and use this to train.
-  - Calculate the R2 Score
+  - Since most of our features are sparse, I should try not to reduce the feature, just use the original entire features. Let's look at what happen.
+  - Model
+    - Concat train data and test data
+    - Use LabelEncoder to transfer categorical features to numerical
+    - Create the same stacked model, and use this to train.
+    - Calculate the R2 Score
 
 - Result
   - Bravado! I get 0.5498 in final private leaderboard which approaches top 100 in this competition! 
