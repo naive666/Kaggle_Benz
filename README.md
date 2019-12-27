@@ -75,6 +75,11 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   
 - [Submission](/ML_Model_2/my_submission2.csv)
 
+- Summary 
+  - It seems plausible that feature reduction has negative effect to the result. I guess this is because most features are sparse in this competition which means several particular columns represent one feature in the original dataset. Since the sparsity, it will not take too much space while runing the model. However, in the general cases one should do feature reduction
+  
+## Deep Learning Model
+
 
 
 
