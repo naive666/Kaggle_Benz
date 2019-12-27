@@ -9,7 +9,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 
 - [Background](#background)
 - [ML_Model 1](#ml-model-1)
-- [ML_Model 2]()
+- [ML_Model 2](#ml-model-2)
 - [DP_Model]()
 - [Results]()
 - [Summary]()
@@ -41,9 +41,42 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 - Summary
   -  This model could be improved by the following aspects:
     - The Random Forest Regressor parameters could be tune
-    - We should factorize the categorical features first, then use model to selecting features
+    - I factorize the categorical features first, then use model to selecting features
     - In each epoch, select over 10 features
-    - We could try more than 7 features in the predict models
+    - I could try more than 7 features in the predict models
 
 - Warning
   - After finishing this model, I found I made several mistakes. Since most features are encoded by 0 and 1, it is reasonable to guess some columns together represents one feature(This is like our factorize process). In order to correct the mistake, the second method comes up
+  
+## ML Model 2
+[This](/ML_Model_2) model does not apply sophisticate feature reduction methods, it uses tsvd, pca, FastIca to select 12 features.
+- [Model](/ML_Model_2/feature_selection3.ipynb)
+  - Concat train data and test data
+  - Use LabelEncoder to transfer categorical features to numerical
+  - Use tsvd, pca, FastIca to choose 12 features respectively, be careful that pca is not a good choice for spase data since it need centralize.
+  - Create a stacked model composited by one Lasso, one gradient boost regressor and one Lasso to do final prediction.
+  - Create another model of XGBoost
+  - Train the selected 12 features to XGBoost and the stacked model respectively
+  - Calculate the R2 score
+  
+- Result
+  - Unfortunately, XGBoost model get 0.39 while the stacked model scores 0.45, neither is a good score. It seems I should not reduce the features so much. 
+
+- [Revised Model](/ML_Model_2/feature_selection4.ipynb)
+Since most of our features are sparse, I should try not to reduce the feature, just use the original entire features. Let's look at what happen.
+- Model
+  - Concat train data and test data
+  - Use LabelEncoder to transfer categorical features to numerical
+  - Create the same stacked model, and use this to train.
+  - Calculate the R2 Score
+
+- Result
+  - Bravado! I get 0.5498 in final private leaderboard which approaches top 100 in this competition! 
+  
+-[Submission](/ML_Model_2/my_submission2.csv)
+
+
+
+
+
+
