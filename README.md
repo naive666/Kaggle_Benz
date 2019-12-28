@@ -10,10 +10,9 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 - [Background](#background)
 - [ML_Model 1](#ml-model-1)
 - [ML_Model 2](#ml-model-2)
-- [DP_Model]()
-- [Results]()
-- [Summary]()
-- [Contributor]()
+- [DP_Model](#deep-learning-model)
+- [Summary](#summary)
+- [Contributor](#contributor)
 - [License]()
 
 ## Background
@@ -79,6 +78,12 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
   - It seems plausible that feature reduction has negative effect to the result. I guess this is because most features are sparse in this competition which means several particular columns represent one feature in the original dataset. Since the sparsity, it will not take too much space while runing the model. However, in the general cases one should do feature reduction
   
 ## Deep Learning Model
+[Deep Learning Model](/feature_selection_deep_learning) should have good results under the condition of large features, but this time the result is mediocre as expected. I construct a 3-layer dense neural network and add an extra layer to predict. Here I don't want to talk too much about this method because here is not a very good instance to apply deep learning.
+
+## Contributor 
+
+
+
 
 
 
