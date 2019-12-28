@@ -82,7 +82,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
 
 ## Contributor 
 
-<a href="graphs/contributors"><img src="https://avatars2.githubusercontent.com/u/53068274?s=40&v=4" /></a>
+<a href="https://github.com/naive666"><img src="https://avatars2.githubusercontent.com/u/53068274?s=40&v=4&button=True" /></a>
 
 
 
