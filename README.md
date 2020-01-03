@@ -70,7 +70,7 @@ A Summary For Kaggle Featured Prediction Competition: Mercedes-Benz Greener Manu
     - Calculate the R2 Score
 
 - Result
-  - Bravado! I get 0.5498 in final private leaderboard which approaches top 100 in this competition! 
+  - Bravo! I get 0.5498 in final private leaderboard which approaches top 100 in this competition! 
   
 - [Submission](/ML_Model_2/my_submission2.csv)
 
